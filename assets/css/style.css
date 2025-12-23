@@ -1,0 +1,65 @@
+body {
+  background: #f5f5f5;
+}
+
+#page-content {
+  min-height: 70vh;
+}
+
+/* Home hero section */
+.home-hero-wrapper {
+  background: #f5f5f5;
+}
+
+.home-hero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.home-hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.home-search-box .form-control {
+  border-radius: 999px 0 0 999px;
+}
+
+.home-search-box .btn {
+  border-radius: 0 999px 999px 0;
+}
+
+/* Light text helper */
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Category cards */
+.category-card {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
